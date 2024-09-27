@@ -95,4 +95,9 @@ void timer_handler(struct regs *r);
 void timer_install();
 void timer_wait(int ticks);
 
+// kb.c 
+void keyboard_handler(struct regs *r);
+void keyboard_install();
+void send_command_to_keyboard(unsigned command);
+
 #endif
