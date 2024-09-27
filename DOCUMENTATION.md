@@ -64,17 +64,18 @@ Para compilar e executar o kernel, siga os passos abaixo:
 	
 3. **Compile o kernel:**
 
-Utilize o makefile para compilar o kernel. Esse script automatiza o processo de montagem, compilação e linkagem.
+Utilize o `makefile` para compilar o kernel. Esse script automatiza o processo de montagem, compilação e linkagem.
 
-	```bash
-	make
+	```
+		make
+	```
 	
 4. **Execute o kernel:**
 
 Após a compilação bem-sucedida, você pode iniciar o kernel em um ambiente QEMU usando o seguinte comando:
 
-	```bash
+	```
 	qemu-system-x86_64 -kernel kernel.bin
-
+	```
 
 Vale ressaltar que este projeto foi realizado, testado e executado no **Linux**!
