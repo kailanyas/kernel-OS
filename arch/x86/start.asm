@@ -49,6 +49,13 @@ gdt_flush:
     jmp 0x08:flush2   ; 0x08 é o offset para nosso segmento de código: Salto longo!
 flush2:
     ret               ; Retorna para o código C!
+    
+; Carrega a IDT 
+global idt_load
+extern idtp
+idt_load:
+    lidt [idtp]
+    ret
 
 ; Está é uma definição do sua seção de BSS.
 SECTION .bss
