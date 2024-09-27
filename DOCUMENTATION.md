@@ -4,7 +4,7 @@ Este arquivo fornece informações detalhadas sobre a estrutura do código, depe
 
 ## Estrutura do código
 
-kernel-OS
+```kernel-OS
 │
 ├── /arch           # Código específico para arquitetura (ex: x86)
 │   └── x86
@@ -30,7 +30,7 @@ kernel-OS
 │   └── link.ld     # Script de linkagem
 │
 ├── makefile        # Arquivo de construção principal (substitui o build.sh)
-└── README.md       # Descrição do projeto
+└── README.md       # Descrição do projeto```
 
 
 ## Dependências
@@ -62,7 +62,7 @@ Para compilar e executar o kernel, siga os passos abaixo:
 	
 3. **Compile o kernel:**
 
-Utilize o `makefile para compilar o kernel. Esse script automatiza o processo de montagem, compilação e linkagem.
+Utilize o makefile para compilar o kernel. Esse script automatiza o processo de montagem, compilação e linkagem.
 
 	```bash
 	make
