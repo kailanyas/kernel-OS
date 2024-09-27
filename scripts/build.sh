@@ -20,6 +20,11 @@ nasm -f elf32 -o start.o start.asm
             -finline-functions -nostdinc -fno-builtin -fno-pie 
             -I./include -c -m32                                
             -o idt.o idt.c
+            
+            gcc -Wall -O -fstrength-reduce -fomit-frame-pointer             
+             -finline-functions -nostdinc -fno-builtin -fno-pie 
+             -I./include -c -m32                                
+             -o isrs.o isrs.c
 
 ld -m elf_i386 -T link.ld -o kernel.bin start.o 
 echo Feito!
