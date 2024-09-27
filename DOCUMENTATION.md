@@ -32,6 +32,8 @@ kernel-OS
 │
 ├── makefile        # Arquivo de construção principal (substitui o build.sh)
 └── README.md       # Descrição do projeto
+```
+
 
 ## Dependências
 
