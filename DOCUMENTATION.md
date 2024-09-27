@@ -4,7 +4,8 @@ Este arquivo fornece informações detalhadas sobre a estrutura do código, depe
 
 ## Estrutura do código
 
-```kernel-OS
+```bash
+kernel-OS
 │
 ├── /arch           # Código específico para arquitetura (ex: x86)
 │   └── x86
@@ -30,8 +31,7 @@ Este arquivo fornece informações detalhadas sobre a estrutura do código, depe
 │   └── link.ld     # Script de linkagem
 │
 ├── makefile        # Arquivo de construção principal (substitui o build.sh)
-└── README.md       # Descrição do projeto```
-
+└── README.md       # Descrição do projeto
 
 ## Dependências
 
