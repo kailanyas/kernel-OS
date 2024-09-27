@@ -90,4 +90,9 @@ extern void irq13();
 extern void irq14();
 extern void irq15();
 
+// timer.c
+void timer_handler(struct regs *r);
+void timer_install();
+void timer_wait(int ticks);
+
 #endif
