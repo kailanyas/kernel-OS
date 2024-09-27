@@ -19,7 +19,6 @@ void timer_handler(struct regs *r)
     if (timer_ticks % 18 == 0)
     {
     	move_cursor_clock();
-        print_clock();
         return_to_cursor();
     }
 }
