@@ -58,6 +58,16 @@ void outportb (unsigned short _port, unsigned char _data)
 *  laço infinito. Este vai ser usado para nosso laço 'ocioso' */
 int main()
 {
+
+	gdt_install();
+    idt_install();
+    irq_install();
+    __asm__ __volatile__ ("sti");
+    init_video();
+    settextcolor(5, 0);
+    puts("Bem-vindo ao kernel-OS!\n");
+    timer_install();
+    keyboard_install();	
     for (;;);
 
     return 0;
